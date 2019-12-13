@@ -22,3 +22,7 @@ header {
     float: right;
     width: 50%
 }
+
+.monsterBox {
+    border: 5px solid red;
+}
