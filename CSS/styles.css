@@ -36,8 +36,9 @@ header {
 
 .userControls {
     border: 5px solid gray;
+    overflow: overlay;
 }
 .userControls header {
     text-align: center;
-    overflow:overlay
+    
 }
