@@ -15,12 +15,14 @@ header {
 } 
 .left {
     float: left;
-    width: 50%
+    width: 50%;
+    border: 5px solid blue 
 }
 
 .right {
     float: right;
-    width: 50%
+    width: 50%;
+    border: 5px solid green
 }
 
 .monsterBox {
