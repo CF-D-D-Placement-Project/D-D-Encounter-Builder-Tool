@@ -28,3 +28,10 @@ header {
 .monsterBox {
     border: 5px solid red;
 }
+
+.userControls {
+    border: 5px solid gray;
+}
+.userControls header {
+    text-align: center;
+}
