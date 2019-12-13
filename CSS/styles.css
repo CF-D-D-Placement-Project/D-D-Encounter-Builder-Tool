@@ -7,3 +7,9 @@ body {
   p {
     color: red;
   }
+
+header {
+    height: 20%;
+    min-width: auto;
+    background-repeat: no-repeat;
+} 

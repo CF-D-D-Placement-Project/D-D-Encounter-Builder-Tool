@@ -8,8 +8,17 @@
   <nav>add register nav info here for storage</nav>
   <body>
 
-    <header style="background-image: url('images/forest_monster_banner.jpg');">Test</header>
-    <h1 style="background-image: url('images/mountains.jpg');">Interneting Is Easy!</h1>
+
+    <form id='userInput'>
+      <fieldset>
+        <input name="dmName" id="dmName" type="text" placeholder="Welcome Dungeon Master" required>
+        <button>Embark!</button>
+      </fieldset>
+    </form>
+    <header style="background-image: url('images/forest_monster_banner.jpg');">
+      <h1>What is your name?<input id='userName' type='text'></h1></h1>
+    </header>
+    <h1 style="background-image: url('images/mountains.jpg');">Welcome to the stage of Destiny!</h1>
     <section>instructions and inputs go here
       <header>header for the instructions</header>
       <article>Character Level
@@ -19,10 +28,10 @@
       </article>
       <article>input2
         <ul id="charList">
-
+          <header>Party Members</header>
         </ul>
       </article>
-      <button id="test">test</button>
+      <button id="pcCreate">Add PC</button>
     </section>
       
     <section>outputs of the inputs here
