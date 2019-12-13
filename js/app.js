@@ -7,5 +7,5 @@ function testFunc() {
     const newNode = document.createElement('li');
     newNode.nodeValue = `${name} is level ${level}`;
     
-    document.getElementById('charList').appendChild();
+    document.getElementById('charList').appendChild(newNode);
 }
