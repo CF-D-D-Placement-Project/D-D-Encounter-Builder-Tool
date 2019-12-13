@@ -8,16 +8,10 @@
   <nav>add register nav info here for storage</nav>
   <body>
 
-
-    <form id='userInput'>
-      <fieldset>
-        <input name="dmName" id="dmName" type="text" placeholder="Welcome Dungeon Master" required>
-        <button>Embark!</button>
-      </fieldset>
-    </form>
-
-    <header style="background-image: url('images/forest_monster_banner.jpg');">
-      <h1>What is your name?<input id='userName' type='text'></h1></h1>
+    <header id='userInput' style="background-image: url('images/forest_monster_banner.jpg');">
+      <h1>What is your name?<input id='userName' type='text'></h1>
+      <input name="dmName" id="dmName" type="text" placeholder="Welcome Dungeon Master" required>
+      <button>Verily!</button>
     </header>
     <h1 style="background-image: url('images/mountains.jpg');">Welcome to the stage of Destiny!</h1>
     
@@ -25,9 +19,21 @@
     <div class='userControls'>
       <header>header for the instructions</header>
       <section class='left'>Character Level
-        <input id="level" type="number" step="1">Level</input>
+        <input id="level" type="number" step="1" min='0' max='20'>Level</input>
         <input id="name" type="text">name</input>
         <button id="pcCreate">Add PC</button>
+        <br>
+        <input type='checkbox' name='oneShot' value='oneShotProtection'> Activate One-Shot Protection <br>
+        <br>
+        <div class='btn-group'>
+          <button id='easy'>Easy</button>
+          <button id='medium'>Medium</button>
+          <button id='hard'>Hard</button>
+          <button id='deadly'>Deadly</button>
+          <button id='certainDeath'>Certain Death</button>
+        </div>
+        <br>
+        <input id='monsterCount' type='number' step="1" min="0">
       </section>
 
       <section class='right'>
