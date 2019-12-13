@@ -14,19 +14,20 @@ header {
     background-repeat: no-repeat;
 } 
 .left {
+    FONT-VARIANT: JIS04;
     float: left;
-    width: 60%;
+    width: 45%;
     border: 5px solid blue;
-    display: block;
-    margin-right: 0
+    margin-right: 0;
+    margin-left: 3%;    
 }
 
 .right {
     float: right;
-    width: 40%;
+    width: 45%;
     border: 5px solid green;
-    display: block;
-    margin-left: 0
+    margin-left: 0;
+    margin-right: 3%
 }
 
 .monsterBox {
@@ -38,4 +39,5 @@ header {
 }
 .userControls header {
     text-align: center;
+    overflow:overlay
 }
