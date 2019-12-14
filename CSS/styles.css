@@ -45,3 +45,13 @@ header {
     text-align: center;
     
 }
+
+.difficulty {
+    background-color: black;
+    border:none;
+    color:white;
+    text-align:center;
+    text-decoration: none;
+    display:inline-block;
+    font-family:candara;
+}
