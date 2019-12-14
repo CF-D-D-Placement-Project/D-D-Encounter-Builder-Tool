@@ -46,7 +46,7 @@ header {
     
 }
 
-.difficulty {
+..difficultyBtn {
     background-color: black;
     border:none;
     color:white;
@@ -57,7 +57,7 @@ header {
     border-radius: 3%;
 }
 
-.btn-group button {
+.difficultyBtn button {
     background-color: black;
     border:1px solid red;
     color: white;
@@ -66,17 +66,21 @@ header {
     float: left
 }
 
-.btn-group button:not(:last-child) {
+.difficultyBtn button:not(:last-child) {
     border-right:none;
 }
 
-.btn-group:after {
+.difficultyBtn:after {
     content: "";
     clear: both;
     display: table;
 }
 
-.btn-group button:hover {
+.difficultyBtn:active{
+    background-color:dimgray;
+}
+
+.difficultyBtn button:hover, .active {
     background-color: darkgray;
 }
 
