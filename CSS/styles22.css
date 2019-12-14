@@ -1,0 +1,145 @@
+body {
+    background-color: powderblue;
+  }
+  h1 {
+    color: blue;
+  }
+  p {
+    color: red;
+  }
+
+header {
+    height: 20%;
+    background-repeat: no-repeat;
+} 
+
+.userControls {
+    border: 5px solid gray;
+    overflow: overlay;
+}
+
+.left {
+    FONT-VARIANT: JIS04;
+    float: left;
+    margin-right: 0;
+    margin-left: 5%;
+    background: url(/images/attack.jpg) no-repeat;
+    color: blue;
+    text-shadow: 1px 1px darkblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 10%;
+    flex: 1;
+    height: 35%;
+    max-width: 44%;
+    
+}
+
+.left .foeCounter {
+    border-radius: 10%;
+}
+
+.right {
+    float: right;
+    
+    margin-left: 0;
+    margin-right: 1%;
+    background: salmon;
+    border: 3px solid yellow;
+    background-size: 50% contain;
+    border-radius: 10%;
+    flex: 1;
+    width: 45%;
+    
+}
+
+.right ul {
+    min-height: 35%;
+}
+
+.monsterBox {
+    border: 5px solid red;
+}
+
+.monsterBox header {
+    text-align: center;
+}
+
+.userControls header {
+    text-align: center;
+    
+}
+
+#level {
+    margin-left:2px;
+}
+
+#easy {
+    border-top-left-radius: 25%;
+    border-bottom-left-radius: 25%;
+}
+#certainDeath {
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+.inputs {
+    clear:both;
+}
+
+.generateButton {
+    justify-content: center;
+    border-radius: 15%;
+    background-size: contain;
+    color: white;
+    display:flex;
+    width: 15%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background:url(/images/eyeball.jpg) no-repeat;
+}
+
+.difficultyBtn {
+    border:none;
+    color:white;
+    text-align:center;
+    text-decoration: none;
+    display:inline-block;
+    font-family:candara;
+    border-radius: 3%;
+}
+
+.difficultyBtn button {
+    background-color: black;
+    border:1px solid red;
+    color: white;
+    padding: 10px 24px;
+    cursor: hand;
+    float: left;
+}
+
+.difficultyBtn button:not(:last-child) {
+    border-right:none;
+}
+
+.difficultyBtn:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.difficulty:active{
+    background-color:dimgray;
+}
+
+.difficultyBtn button:hover, .active {
+    background-color: darkgray;
+}
+
+.numberInput {
+    max-width: 10%;
+    min-width: 5%;
+}
+
+.nameInput {
+    min-width: 10%;
+    max-width: 20%;
+}

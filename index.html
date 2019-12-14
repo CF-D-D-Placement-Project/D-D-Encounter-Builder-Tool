@@ -3,62 +3,70 @@
   <head >
     <link rel="stylesheet" href="CSS/styles.css">
     <meta charset='UTF-8'/>
-    <title>Semantic HTML</title>
-  </head>
-  <nav>add register nav info here for storage</nav>
-  <body>
+    <title>Character Generator</title>
+   </head>
 
-    <header id='userInput' style="background-image: url('images/forest_monster_banner.jpg');">
-      <h1>What is your name?<input class='nameInput' id='userName' type='text'></h1>
-      <input name="dmName" id="dmName" type="text" placeholder="Welcome Dungeon Master" required>
-      <button>Verily!</button>
-    </header>
-    <h1 style="background-image: url('images/mountains.jpg');">Welcome to the stage of Destiny!</h1>
-    
-    
-    <div class='userControls'>
-      <header>header for the instructions</header>
-      <section class='left'><header>
-        Character input and Difficulty selectors
-      </header>
-        
-        Character Level <input class='numberInput' id="level" type="number" step="1" min='0' max='20'><br>
-        Character Name <input class='nameInput' id="name" type="text"><br>
-        <button id="pcCreate">Add Character</button>
+   <body>
+       <header class='mainHeader'><h1>Welcome to the D&D Character Generator</h1>
+        <form id='login'>
+            <input type='text' id='dmNameField' placeholder='Welcome Dungeon Master'>
+            <button id='submitName'>Login</button>
+            
+        </form>
+        <span id='returningDmHeader'></span>
         <br>
-        <br>
-        <input type='checkbox' name='oneShot' value='oneShotProtection'> Enable One-Shot Protection <br>
-        <br>
-        <div class='difficultyBtn'>
-          <button class='difficulty' id='easy'>Easy</button>
-          <button class='difficulty' id='medium'>Medium</button>
-          <button class='difficulty' id='hard'>Hard</button>
-          <button class='difficulty' id='deadly'>Deadly</button>
-          <button class='difficulty' id='certainDeath'>Certain Death</button>
-        </div>
-        <br>
-        Number of Foes <input class='numberInput' id='monsterCount' type='number' step="1" min="0">
-      </section>
+        <button id='clearName'>Clear Name</button>
+       </header>
+       
+       <table class='userFields'>
+           <tr>
+               <td><header id='inputHeader'>User Inputs</header></td>
+               <td><header id='characterHeader'>Party Members</header></td>
+           </tr>
+            <tr class='firstRow'>
+               <td class='inputs'>
+                    <section id='character'>
+                    <header>Character Info</header>
+                    Character Level (1-20)<input id='pcLevel' type='number' step='1' min='1' max='20'>
+                    <br>
+                    Character Name<input id='pcName' type='text'>
+                    <br>
+                    <button id='addCharacter'>Add Character</button>
+                    </section>
+                    <br>
+                    <header>Horde Options</header>
+                    <input type='checkbox' id='oneShotOption'>Enable One-Shot protection?
+                    <br>
+                    How Many Foes?<input type='number' step='1' min='0'>
+                    <br>
+                    <br>
+                    <header>Encounter Difficulty Selector</header>
+                    <section class='difficultyBtn'>                        
+                        <button class='difficulty' id='easy'>Easy</button>
+                        <button class='difficulty' id='medium'>Medium</button>
+                        <button class='difficulty' id='hard'>Hard</button>
+                        <button class='difficulty' id='deadly'>Deadly</button>
+                        <button class='difficulty' id='certainDeath'>Deadly+</button>
+                    </section>
+                    <br>
+                    <br>
+                    <button id='generate' class='generate'>Generate Monsters!</button>
+                </td>
+               <td class='charactersCell'>
+                    <ul id='characterList'>
+                        
+                    </ul>
+               </td>
+           </tr>
+       </table>
 
-      <section class='right'>
-        <header>Party Members</header>
-        <ul id="charList"></ul> 
-        </ul>
-      </section>
-    
-    </div>
-    
-    <div class='monsterBox' id='monsterArea'>  
-      <section>
-        <header>
-          <h1>Generated Monsters</h1>
-        </header>
-        
-      </section>
-    </div>
+       <section class='inputFields'>       
+        </section>
+   
 
-  </body>
-  <footer>This is a footer
-    <script src='js/app.js'></script>
-  </footer>
+
+    </body>
+    <footer>
+        <script src='js/app.js'></script>
+    </footer>
 </html>

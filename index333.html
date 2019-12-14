@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head >
+    <link rel="stylesheet" href="CSS/styles.css">
+    <meta charset='UTF-8'/>
+    <title>Semantic HTML</title>
+  </head>
+  <nav>add register nav info here for storage</nav>
+  <body>
+
+    <header id='userInput' style="background-image: url('images/forest_monster_banner.jpg');">
+      <h1>What is your name?<input class='nameInput' id='userName' type='text'></h1>
+      <input name="dmName" id="dmName" type="text" placeholder="Welcome Dungeon Master" required>
+      <button>Verily!</button>
+    </header>
+    <h1 style="background-image: url('images/mountains.jpg');">Welcome to the stage of Destiny!</h1>
+    
+    
+    <div class='userControls'>
+      <div class='left'>
+        <section>
+          <header>
+            Character input and Difficulty selectors
+          </header>
+          
+            <label>Character Level</label>
+            <input class='numberInput' id="level" type="number" step="1" min='0' max='20'>
+            <br>
+            <label>Character Name</label>
+            <input class='nameInput' id="pcName" type="text">
+            <br>
+            <button id="pcCreate">Add Character</button>
+            <br>
+            <br>
+            <input type='checkbox' name='oneShot' value='oneShotProtection'> Enable One-Shot Protection <br>
+            <br>
+            <section class='difficultyBtn'>
+              <header>Encounter Difficulty Selector</header>
+              <button class='difficulty' id='easy'>Easy</button>
+              <button class='difficulty' id='medium'>Medium</button>
+              <button class='difficulty' id='hard'>Hard</button>
+              <button class='difficulty' id='deadly'>Deadly</button>
+              <button class='difficulty' id='certainDeath'>Certain Death</button>
+            </section>
+            <section class='foeCounter'>
+              <br>
+              Number of Foes <input class='numberInput' id='monsterCount' type='number' step="1" min="0">
+              <br>
+              <button class='generateButton'>Generate!</button>
+              <br>
+            </section>
+          </section>
+        
+      </div>  
+      <div class='right'>
+         <section >
+           <header>Party Members</header>
+           <ul id="charList"></ul> 
+           </ul>
+         </section>
+       </div>
+    </div>
+
+    <div class='monsterBox' id='monsterArea'>  
+      <section>
+        <header>
+          <h1>Generated Monsters</h1>
+        </header>
+        
+      </section>
+    </div>
+
+  </body>
+  <footer>This is a footer
+    <script src='js/app.js'></script>
+  </footer>
+</html>

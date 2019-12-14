@@ -1,95 +1,107 @@
+.mainHeader {
+    display: block;
+    width: 100%;
+    background: linear-gradient(black,red);
+    height: 7em;
+    color: white;
+    text-align: center;
+}
+
+.mainHeader h1 {
+    margin-block-start: auto;
+}
+
 body {
-    background-color: powderblue;
-  }
-  h1 {
-    color: blue;
-  }
-  p {
-    color: red;
-  }
-
-header {
-    height: 20%;
-    min-width: auto;
-    background-repeat: no-repeat;
-} 
-.left {
-    FONT-VARIANT: JIS04;
-    float: left;
-    width: 45%;
-    border: 5px solid blue;
-    margin-right: 0;
-    margin-left: 3%;    
+    background: url(/images/pastoral.jpg) no-repeat;
+    margin: 0px;
 }
 
-.right {
-    float: right;
-    width: 45%;
-    border: 5px solid green;
-    margin-left: 0;
-    margin-right: 3%
-}
-
-.monsterBox {
-    border: 5px solid red;
-}
-
-.monsterBox header {
+.charactersCell header {
     text-align: center;
-}
-.userControls {
-    border: 5px solid gray;
-    overflow: overlay;
-}
-.userControls header {
-    text-align: center;
+    border: 1px solid red;
     
 }
 
-..difficultyBtn {
-    background-color: black;
+.charactersCell {
+    background: url(/images/heroes.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius: 10%;
+}
+
+.charactersCell li {
+    display: table;
+    margin: 0px auto 0px auto;
+    color: honeydew;
+    text-shadow: 1px 1px red;
+}
+
+.userFields {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.userFields header {
+    text-align: center;
+}
+
+.inputs {
+    min-width: 315px;
+    width: 40%;
+    /* border: 1px solid black; */
+    height: 180px;
+    min-height: 20%;
+    border-radius: 13%;
+    background: url(/images/attack.jpg) no-repeat;
+    background-size: cover;
+    color: cornsilk;
+    text-shadow: 1px 3px 4px black;
+    font-size: larger;
+}
+
+.firstRow {
+    height: 325px;
+}
+
+.generate {
+    background-color: saddlebrown;
+    color: yellow;
+    border-radius: 10%;
+    display: block;
+    margin: auto;
+}
+.difficultyBtn {
     border:none;
     color:white;
     text-align:center;
     text-decoration: none;
-    display:inline-block;
+    display:block;
     font-family:candara;
     border-radius: 3%;
 }
 
-.difficultyBtn button {
+.difficultyBtn .difficulty {
     background-color: black;
-    border:1px solid red;
+    border: 1px solid red;
     color: white;
-    padding: 10px 24px;
-    cursor: hand;
-    float: left
+    padding: 5px 6px;
+    cursor: pointer;
+    float: left;
+    width:20%;
 }
 
 .difficultyBtn button:not(:last-child) {
-    border-right:none;
-}
+    border-right: none; /* Prevent double borders */
+  }
 
-.difficultyBtn:after {
+/* Clear floats (clearfix hack) */
+.btn-difficultyBtn:after {
     content: "";
     clear: both;
     display: table;
-}
-
-.difficultyBtn:active{
-    background-color:dimgray;
-}
-
-.difficultyBtn button:hover, .active {
-    background-color: darkgray;
-}
-
-.numberInput {
-    max-width: 10%;
-    min-width: 5%;
-}
-
-.nameInput {
-    min-width: 10%;
-    max-width: 20%;
+  }
+  
+/* Add a background color on hover */
+.difficultyBtn button:hover {
+background-color: #3e8e41;
 }
