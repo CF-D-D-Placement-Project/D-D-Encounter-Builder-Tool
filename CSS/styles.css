@@ -56,3 +56,26 @@ header {
     font-family:candara;
     border-radius: 3%;
 }
+
+.btn-group button {
+    background-color: black;
+    border:1px solid red;
+    color: white;
+    padding: 10px 24px;
+    cursor: hand;
+    float: left
+}
+
+.btn-group button:not(:last-child) {
+    border-right:none;
+}
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:hover {
+    background-color: darkgray;
+}
