@@ -9,7 +9,7 @@
   <body>
 
     <header id='userInput' style="background-image: url('images/forest_monster_banner.jpg');">
-      <h1>What is your name?<input id='userName' type='text'></h1>
+      <h1>What is your name?<input class='nameInput' id='userName' type='text'></h1>
       <input name="dmName" id="dmName" type="text" placeholder="Welcome Dungeon Master" required>
       <button>Verily!</button>
     </header>
@@ -22,12 +22,12 @@
         Character input and Difficulty selectors
       </header>
         
-        Character Level <input id="level" type="number" step="1" min='0' max='20'></input>
-        Character Name <input id="name" type="text">Name</input>
+        Character Level <input class='numberInput' id="level" type="number" step="1" min='0' max='20'><br>
+        Character Name <input class='nameInput' id="name" type="text"><br>
         <button id="pcCreate">Add Character</button>
         <br>
         <br>
-        <input type='checkbox' name='oneShot' value='oneShotProtection'> Activate One-Shot Protection <br>
+        <input type='checkbox' name='oneShot' value='oneShotProtection'> Enable One-Shot Protection <br>
         <br>
         <div class='btn-group'>
           <button class='difficulty' id='easy'>Easy</button>
@@ -37,7 +37,7 @@
           <button class='difficulty' id='certainDeath'>Certain Death</button>
         </div>
         <br>
-        Number of Foes <input id='monsterCount' type='number' step="1" min="0">
+        Number of Foes <input class='numberInput' id='monsterCount' type='number' step="1" min="0">
       </section>
 
       <section class='right'>

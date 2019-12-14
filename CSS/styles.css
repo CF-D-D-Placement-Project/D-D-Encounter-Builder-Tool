@@ -79,3 +79,13 @@ header {
 .btn-group button:hover {
     background-color: darkgray;
 }
+
+.numberInput {
+    max-width: 10%;
+    min-width: 5%;
+}
+
+.nameInput {
+    min-width: 10%;
+    max-width: 20%;
+}
